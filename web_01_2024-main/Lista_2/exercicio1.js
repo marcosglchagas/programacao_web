@@ -5,11 +5,9 @@ var Carro = /** @class */ (function () {
         this._anoFabricacao = anoFabricacao;
     }
     Object.defineProperty(Carro.prototype, "marca", {
-        // Getters
         get: function () {
             return this._marca;
         },
-        // Setters
         set: function (marca) {
             this._marca = marca;
         },
@@ -36,18 +34,14 @@ var Carro = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    // Método para calcular a idade do carro com base no ano atual
     Carro.prototype.calcularIdade = function () {
         var anoAtual = new Date().getFullYear();
         return anoAtual - this._anoFabricacao;
     };
     return Carro;
 }());
-// Criando uma instância de Carro
-var meuCarro = new Carro("Toyota", "Corolla", 2018);
-// Exibindo informações do carro
+var meuCarro = new Carro("Volkswagem", "Saveiro", 2020);
 console.log("Marca:", meuCarro.marca);
 console.log("Modelo:", meuCarro.modelo);
 console.log("Ano de fabricação:", meuCarro.anoFabricacao);
-// Calculando e exibindo a idade do carro
 console.log("Idade do carro:", meuCarro.calcularIdade(), "anos");

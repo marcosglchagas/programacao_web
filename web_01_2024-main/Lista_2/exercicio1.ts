@@ -9,7 +9,6 @@ class Carro {
         this._anoFabricacao = anoFabricacao;
     }
 
-    // Getters
     get marca(): string {
         return this._marca;
     }
@@ -22,7 +21,6 @@ class Carro {
         return this._anoFabricacao;
     }
 
-    // Setters
     set marca(marca: string) {
         this._marca = marca;
     }
@@ -35,20 +33,16 @@ class Carro {
         this._anoFabricacao = anoFabricacao;
     }
 
-    // Método para calcular a idade do carro com base no ano atual
-    calcularIdade(): number {
+     calcularIdade(): number {
         const anoAtual: number = new Date().getFullYear();
         return anoAtual - this._anoFabricacao;
     }
 }
 
-// Criando uma instância de Carro
-const meuCarro = new Carro("Toyota", "Corolla", 2018);
+const meuCarro = new Carro("Volkswagem", "Saveiro", 2020);
 
-// Exibindo informações do carro
 console.log("Marca:", meuCarro.marca);
 console.log("Modelo:", meuCarro.modelo);
 console.log("Ano de fabricação:", meuCarro.anoFabricacao);
 
-// Calculando e exibindo a idade do carro
 console.log("Idade do carro:", meuCarro.calcularIdade(), "anos");

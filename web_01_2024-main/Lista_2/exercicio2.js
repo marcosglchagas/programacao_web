@@ -4,7 +4,6 @@ var Calculadora = /** @class */ (function () {
         this._valor2 = valor2;
     }
     Object.defineProperty(Calculadora.prototype, "valor1", {
-        // Getters e Setters
         get: function () {
             return this._valor1;
         },
@@ -24,7 +23,6 @@ var Calculadora = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    // Métodos de operações matemáticas
     Calculadora.prototype.soma = function () {
         return this._valor1 + this._valor2;
     };
@@ -45,8 +43,7 @@ var Calculadora = /** @class */ (function () {
     };
     return Calculadora;
 }());
-// Exemplo de uso da classe Calculadora
-var calculadora = new Calculadora(10, 5);
+var calculadora = new Calculadora(25, 10);
 console.log("Soma:", calculadora.soma());
 console.log("Subtração:", calculadora.subtracao());
 console.log("Multiplicação:", calculadora.multiplicacao());

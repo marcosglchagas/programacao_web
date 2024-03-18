@@ -7,7 +7,6 @@ class Calculadora {
         this._valor2 = valor2;
     }
 
-    // Getters e Setters
     get valor1(): number {
         return this._valor1;
     }
@@ -24,7 +23,6 @@ class Calculadora {
         this._valor2 = valor;
     }
 
-    // Métodos de operações matemáticas
     soma(): number {
         return this._valor1 + this._valor2;
     }
@@ -49,8 +47,7 @@ class Calculadora {
     }
 }
 
-// Exemplo de uso da classe Calculadora
-const calculadora = new Calculadora(10, 5);
+const calculadora = new Calculadora(25, 10);
 console.log("Soma:", calculadora.soma());
 console.log("Subtração:", calculadora.subtracao());
 console.log("Multiplicação:", calculadora.multiplicacao());
